@@ -32,21 +32,21 @@ class Login: Fragment(){
 
 //      val password: String = binding.password.text.toString()
 
-        binding.loginButton.setOnClickListener {
-            if(binding.userName.equals("Abughalib") ){
-                Toast.makeText(getActivity()?.getApplicationContext(), "Login Success", Toast.LENGTH_SHORT).show()
-                Navigation.createNavigateOnClickListener(R.id.action_loginFragment_to_viewData)
-            }
-            else{
-                Toast.makeText(getActivity()?.getApplicationContext(), "Error", Toast.LENGTH_LONG).show()
-            }
+        val contextActivity = getActivity()?.getApplicationContext()
+
+        binding.loginButton.setOnClickListener {view: View ->
+
+            view.findNavController().navigate(R.id.action_loginFragment_to_viewData)
+            Toast.makeText(contextActivity, "Login Success", Toast.LENGTH_SHORT).show()
+
         }
 
-        binding.createNewuserButton.setOnClickListener {
-            Toast.makeText(getActivity()?.getApplicationContext(), "Register Page", Toast.LENGTH_SHORT).show()
-            Navigation.createNavigateOnClickListener(R.id.action_loginFragment_to_createUser)
+        binding.createNewuserButton.setOnClickListener {view: View ->
+
+            view.findNavController().navigate(R.id.action_loginFragment_to_createUser)
+            Toast.makeText(contextActivity, "Register Page", Toast.LENGTH_SHORT).show()
+
         }
-        //Navigation.createNavigateOnClickListener(R.id.action_titleFragment_to_gameFragment)
 
 
         return binding.root
