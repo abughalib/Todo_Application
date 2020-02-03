@@ -5,6 +5,8 @@
 * Expected to be release by end of this month
 
 ![Preview Application](/Screenshot_1580759784.png)
+![Preview Application](/Screenshot_1580760064.png)
+![Preview Application](/Screenshot_1580760051.png)
 
 ## Features to be included
 
