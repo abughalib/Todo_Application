@@ -7,6 +7,7 @@
 ![Preview Application](/Screenshot_1580759784.png)
 ![Preview Application](/Screenshot_1580760064.png)
 ![Preview Application](/Screenshot_1580760051.png)
+![Preview Application](/task_addition.PNG)
 
 ## Features to be included
 
