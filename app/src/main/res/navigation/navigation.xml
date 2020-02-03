@@ -33,5 +33,14 @@
         android:id="@+id/viewData"
         android:name="com.android.todo.viewdata.ViewData"
         android:label="Todo List"
-        tools:layout="@layout/view_data_fragment" />
+        tools:layout="@layout/view_data_fragment" >
+        <action
+            android:id="@+id/action_viewData_to_addNewData"
+            app:destination="@id/addNewData" />
+    </fragment>
+    <fragment
+        android:id="@+id/addNewData"
+        android:name="com.android.todo.addNewData.AddNewData"
+        android:label="AddNewData"
+        tools:layout="@layout/add_new_data_fragment"/>
 </navigation>

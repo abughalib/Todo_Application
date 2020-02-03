@@ -17,8 +17,6 @@ class AboutFragment : Fragment(){
         binding = DataBindingUtil.inflate(inflater,
             R.layout.fragment_about,container,false)
 
-
-
         return binding.root
     }
 

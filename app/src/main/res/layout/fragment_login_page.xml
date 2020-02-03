@@ -53,14 +53,16 @@
 
         <Button
             android:id="@+id/create_newuser_button"
-            android:background="@color/colorAccent"
             android:layout_width="159dp"
             android:layout_height="wrap_content"
+            android:layout_marginEnd="28dp"
+            android:background="@color/colorAccent"
             android:contentDescription="@string/new_user"
             android:text="@string/new_user"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/loginFragment"
+            app:layout_constraintHorizontal_bias="0.903"
+            app:layout_constraintStart_toEndOf="@+id/login_button"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.486" />
 
