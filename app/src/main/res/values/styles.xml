@@ -1,0 +1,27 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- Output to TextView styled with a little HTML -->
+    <string name="title"><![CDATA[<h3>HERE IS YOUR TODO DATA</h3>]]></string>
+    <string name="start_time"><![CDATA[<b>Start:</b>]]></string>
+    <string name="end_time"><![CDATA[<b>FINISH:</b>]]></string>
+    <string name="priority"><![CDATA[<b>PRIORITY:</b>]]></string>
+    <string name="time_taken"><![CDATA[<b>Hours:Minutes:Seconds</b>]]></string>
+
+    <!-- Todo Priority strings -->
+    <string name="how_was_hour_sleep">How was your sleep?</string>
+    <string name="zero">Doesn\'t Care Much</string>
+    <string name="one">Will Think About it</string>
+    <string name="two">When I get Time</string>
+    <string name="three">Normal</string>
+    <string name="four">As Soon as I finish current work</string>
+    <string name="five">Very Urgent</string>
+
+</resources>

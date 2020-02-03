@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">todo</string>
+    <string name="new_user">New User</string>
+    <string name="login">Login</string>
+    <string name="quit">Exit</string>
+    <string name="about">About</string>
+    <string name="user_name">Enter Your Username</string>
+    <string name="content_user">Contains Username</string>
+    <string name="Password">Enter Your Password</string>
+    <string name="content_password">Contains Password</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- New User Input Field  -->
+    <string name="new_username">Enter username</string>
+    <string name="new_password">Enter your password</string>
+    <string name="register_button">Register</string>
+    <string name="cancel_button">Cancel</string>
+
+    <!-- Final Show Data Screen -->
+
+    <string name="stored_data">Here are your stored data</string>
+
+</resources>
