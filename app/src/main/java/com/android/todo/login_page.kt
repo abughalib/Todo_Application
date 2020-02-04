@@ -12,6 +12,7 @@ import androidx.navigation.fragment.findNavController
 import androidx.navigation.ui.NavigationUI
 import com.android.todo.databinding.FragmentLoginPageBinding
 import kotlinx.android.synthetic.main.fragment_login_page.*
+import timber.log.Timber
 import kotlin.system.exitProcess
 
 
@@ -25,6 +26,7 @@ class Login: Fragment(){
         savedInstanceState: Bundle?
     ): View? {
 
+        Timber.i("Login Created")
         binding = DataBindingUtil.inflate(inflater, R.layout.fragment_login_page, container, false)
         setHasOptionsMenu(true)
 
@@ -53,6 +55,7 @@ class Login: Fragment(){
     }
 
     override fun onCreateOptionsMenu(menu: Menu?, inflater: MenuInflater?) {
+        Timber.i("OnCreateMenu Called")
         super.onCreateOptionsMenu(menu, inflater)
         inflater?.inflate(R.menu.option_menu, menu)
     }
@@ -61,10 +64,12 @@ class Login: Fragment(){
 
         return when(item?.itemId){
             R.id.aboutFragment ->{
+                Timber.i("AboutFragment Called from OptionMenu")
                 Toast.makeText(getActivity()?.getApplicationContext(), "About", Toast.LENGTH_SHORT).show()
-                return NavigationUI.onNavDestinationSelected(item, findNavController())
+                NavigationUI.onNavDestinationSelected(item, findNavController())
             }
             R.id.exit ->{
+                Timber.i("Exit From OptionMenu")
                 Toast.makeText(context, "Exiting", Toast.LENGTH_SHORT).show()
                 exitProcess(0)
             }
