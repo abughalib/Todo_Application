@@ -16,5 +16,5 @@
  
 ### Future Changes
 
-* Encrypting password with RSA-256 bit.
+* Encrypting password.
 * Auto-Todo Expire (if set it to be).
