@@ -30,16 +30,18 @@ class CreateUser : Fragment() {
         val newUserName: String = binding.inputName.text.toString()
         val newPassword: String = binding.inputPassword.text.toString()
 
-        binding.registerButton.setOnClickListener {
+        binding.registerButton.setOnClickListener {view: View->
 
             if(newUserName.isNotEmpty() and newPassword.isNotEmpty())
 
-            Toast.makeText(getActivity()?.getApplicationContext(), "Register successful", Toast.LENGTH_SHORT).show()
+            Toast.makeText(getActivity()?.getApplicationContext(), "Registration successful", Toast.LENGTH_SHORT).show()
+            view.findNavController().navigate(R.id.action_createUser_to_viewData)
 
         }
 
         binding.cancelButton.setOnClickListener {
             Toast.makeText(getActivity()?.getApplicationContext(), "Cancelled Registration", Toast.LENGTH_SHORT).show()
+            view?.findNavController()!!.navigate(R.id.action_createUser_to_loginFragment)
         }
 
 
@@ -59,7 +61,7 @@ class CreateUser : Fragment() {
             R.id.aboutFragment ->{
 
                 Toast.makeText(getActivity()?.getApplicationContext(), "AboutFragment", Toast.LENGTH_SHORT).show()
-                return NavigationUI.onNavDestinationSelected(item!!, view!!.findNavController())
+                return NavigationUI.onNavDestinationSelected(item, view!!.findNavController())
             }
 
             R.id.exit ->{

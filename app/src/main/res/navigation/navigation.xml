@@ -28,7 +28,14 @@
         android:id="@+id/createUser"
         android:name="com.android.todo.CreateUser"
         android:label="Create New User"
-        tools:layout="@layout/fragment_create_user" />
+        tools:layout="@layout/fragment_create_user" >
+        <action
+            android:id="@+id/action_createUser_to_viewData"
+            app:destination="@id/viewData" />
+        <action
+            android:id="@+id/action_createUser_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
     <fragment
         android:id="@+id/viewData"
         android:name="com.android.todo.viewdata.ViewData"
@@ -42,5 +49,9 @@
         android:id="@+id/addNewData"
         android:name="com.android.todo.addNewData.AddNewData"
         android:label="AddNewData"
-        tools:layout="@layout/add_new_data_fragment"/>
+        tools:layout="@layout/add_new_data_fragment">
+        <action
+            android:id="@+id/action_addNewData_to_viewData"
+            app:destination="@id/viewData" />
+    </fragment>
 </navigation>
