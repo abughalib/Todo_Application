@@ -14,5 +14,5 @@
  
 ### Future Changes
 
-* Encrypting password.
+* Encrypting password with AES.
 * Auto-Todo Expire (if set it to be).
